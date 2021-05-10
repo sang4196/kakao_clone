@@ -4,27 +4,23 @@
     <title>HOME - My first website!</title>
     <link href="styles.css" rel="stylesheet" />
     <style>
-      body {
-        height: 1000vh;
-        margin: 20px;
+      a {
+        color: wheat;
+        background-color: tomato;
+        text-decoration: none;
+        padding: 3px 5px;
+        border-radius: 5px;
+        font-size: 55px;
+        transition: all 1s ease-in-out;
       }
-      div {
-        width: 300px;
-        height: 300px;
-        font-size: 30px;
-        color: white;
-        background-color: teal;
-      }
-      #dif {
+      a:hover {
+        color: tomato;
         background-color: wheat;
-        width: 350px;
-        position: fixed;
-        top: 5px;
+        border-radius: 20px;
       }
     </style>
   </head>
   <body>
-    <div></div>
-    <div id="dif"></div>
+    <a href="#">Go Home</a>
   </body>
 </html>
