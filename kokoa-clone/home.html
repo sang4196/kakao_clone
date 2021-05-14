@@ -2,25 +2,23 @@
 <html>
   <head>
     <title>HOME - My first website!</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="SH!" />
     <link href="styles.css" rel="stylesheet" />
     <style>
-      a {
-        color: wheat;
-        background-color: tomato;
-        text-decoration: none;
-        padding: 3px 5px;
-        border-radius: 5px;
-        font-size: 55px;
-        transition: all 1s ease-in-out;
+      img {
+        border: 5px solid black;
+        border-radius: 80%;
+        transition: transform 2s ease-in-out;
       }
-      a:hover {
-        color: tomato;
-        background-color: wheat;
-        border-radius: 20px;
+      img:hover {
+        transform: rotateY(360deg) scale(0.5);
       }
     </style>
   </head>
   <body>
-    <a href="#">Go Home</a>
+    <img src="img/logo.png" />
+    <span>123</span>
+    <span>123</span>
   </body>
 </html>
