@@ -2,13 +2,24 @@
 <html>
   <head>
     <title>HOME - My first website!</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="SH!" />
     <link href="styles.css" rel="stylesheet" />
+
+    <style>
+      img {
+        border: 5px solid black;
+        border-radius: 80%;
+        transition: transform 2s ease-in-out;
+      }
+      img:hover {
+        transform: rotateY(360deg) scale(0.5);
+      }
+    </style>
   </head>
   <body>
-    <div id="one">
-      <div class="insmall"></div>
-      <div id="two"></div>
-      <div class="insmall"></div>
-    </div>
+    <img src="img/logo.png" />
+    <span>123</span>
+    <span>123</span>
   </body>
 </html>
