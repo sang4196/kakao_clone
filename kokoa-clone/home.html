@@ -5,21 +5,41 @@
     <meta charset="utf-8" />
     <meta name="description" content="SH!" />
     <link href="styles.css" rel="stylesheet" />
-
     <style>
-      img {
-        border: 5px solid black;
-        border-radius: 80%;
-        transition: transform 2s ease-in-out;
+      body {
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
       }
-      img:hover {
-        transform: rotateY(360deg) scale(0.5);
+      div {
+        background-color: teal;
+        width: 200px;
+        height: 200px;
+      }
+      @media screen and (min-width: 600px) and (max-width: 1200px) {
+        div {
+          background-color: tomato;
+        }
+      }
+      span {
+        font-size: 36px;
+      }
+      @media screen and (orientation: landscape) {
+        span {
+          display: none;
+        }
+      }
+      @media print {
+        body {
+          background-color: tomato;
+        }
       }
     </style>
   </head>
   <body>
-    <img src="img/logo.png" />
-    <span>123</span>
-    <span>123</span>
+    <div></div>
+    <span>Please flip your phone :(</span>
   </body>
 </html>
